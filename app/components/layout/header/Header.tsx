@@ -47,9 +47,6 @@ const Header = ({
             maskImage: `url(${iconURL})`,
             maskSize: "100%",
             maskRepeat: "no-repeat",
-            WebkitMaskImage: `url(${iconURL})`,
-            WebkitMaskSize: "100%",
-            WebkitMaskRepeat: "no-repeat",
             position: "absolute",
             animation: `float ${
               -scrollMultipliers[i] + 1
@@ -86,9 +83,6 @@ const Header = ({
           maskImage: `url(${iconURL})`,
           maskSize: "100%",
           maskRepeat: "no-repeat",
-          WebkitMaskImage: `url(${iconURL})`,
-          WebkitMaskSize: "100%",
-          WebkitMaskRepeat: "no-repeat",
           opacity: "100%",
           animation: "drop 1.65s",
         }}

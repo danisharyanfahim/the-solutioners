@@ -67,7 +67,6 @@ const Carousel: React.FC<CarouselProps> = ({
           background:
             "linear-gradient(135deg,rgba(165 155 200 / 0.2), rgba(230 225 255 / 0.2))",
           backdropFilter: "blur(15px)",
-          WebkitBackdropFilter: "blur(15px)",
         }}
       >
         <CarouselCard

@@ -9,6 +9,7 @@ const ButtonLink = ({
   margin,
   style,
   clickFunc,
+  fontSize,
 }: // imageInfo: { size, src, colorInfo },
 {
   title: string;
@@ -17,6 +18,7 @@ const ButtonLink = ({
   margin?: string;
   style: {};
   clickFunc?: () => void;
+  fontSize?: string;
   // imageInfo: { size?: number; src?: string; colorInfo?: string };
 }) => {
   return (
@@ -60,7 +62,7 @@ const ButtonLink = ({
         ></div> */}
         <p
           style={{
-            fontSize: "1.5rem",
+            fontSize: fontSize ?? "1.5rem",
             display: "table-cell",
             verticalAlign: "middle",
             textAlign: "center",

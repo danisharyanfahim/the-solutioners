@@ -111,7 +111,6 @@ const NavMenu: React.FC<{ btnInfo: btnInfo }> = ({ btnInfo }) => {
                 background:
                   "linear-gradient(to top, rgba(245 240 255 / 0.5), rgba(225 220 250 / 0.9))",
                 backdropFilter: "blur(20px)",
-                WebkitBackdropFilter: "blur(20px)",
                 // boxShadow: "0px 0px 7px 1px rgba(0 0 0 /0.16)",
                 zIndex: "-10",
               }}
@@ -194,7 +193,6 @@ const NavMenu: React.FC<{ btnInfo: btnInfo }> = ({ btnInfo }) => {
               background:
                 "linear-gradient(to top, rgba(245 240 255 / 0.5), rgba(225 220 250 / 0.9))",
               backdropFilter: "blur(20px)",
-              WebkitBackdropFilter: "blur(20px)",
               borderBottom: "1px solid rgba(0, 0, 20, 0.25)",
               // boxShadow: "0px 4px 8px 1px rgba(0 0 0 /0.03)",
             }}
