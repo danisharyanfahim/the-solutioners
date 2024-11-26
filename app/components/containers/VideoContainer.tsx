@@ -31,7 +31,8 @@ const VideoContainer = ({
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "right",
-        boxShadow: "inset 0px 0px 0px 3px rgba(145 145 155 / 0.4)",
+        boxShadow:
+          "0px 1px 5px 2px rgba(0 0 0 /0.15), inset 0px 0px 0px 3px rgba(145 145 155 / 0.4)",
       }}
     >
       <VideoPlayer

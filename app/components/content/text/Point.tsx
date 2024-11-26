@@ -2,7 +2,7 @@ import React from "react";
 
 type textFormat = "center" | "left" | "right" | "justify";
 
-const Paragraph = ({
+const Point = ({
   children,
   textFormat,
   padding,
@@ -18,8 +18,6 @@ const Paragraph = ({
   return (
     <p
       style={{
-        display: "table-cell",
-        verticalAlign: "middle",
         textAlign: textFormat,
         fontSize: "clamp(1rem, 1vw + 0.625rem, 1.7rem)",
         padding: padding ?? 0,
@@ -32,4 +30,4 @@ const Paragraph = ({
   );
 };
 
-export default Paragraph;
+export default Point;

@@ -1,6 +1,7 @@
 import Container from "@/app/components/containers/Container";
 import VideoContainer from "@/app/components/containers/VideoContainer";
 import Paragraph from "@/app/components/content/text/Paragraph";
+import Point from "@/app/components/content/text/Point";
 import Title from "@/app/components/content/text/Title";
 import Header from "@/app/components/layout/header/Header";
 import Page from "@/app/components/layout/page/Page";
@@ -307,17 +308,17 @@ const Home = () => {
             }}
           >
             <li>
-              <Paragraph
+              <Point
                 textFormat="left"
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
                 Emerging cybersecurity company with significant impact across
                 the industry.
-              </Paragraph>
+              </Point>
             </li>
             <li>
-              <Paragraph
+              <Point
                 textFormat="left"
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
@@ -325,27 +326,27 @@ const Home = () => {
                 Knowledgeable team focused on the latest technological
                 advancements, especially in AI. Offering innovative, tailored
                 cybersecurity solutions.
-              </Paragraph>
+              </Point>
             </li>
             <li>
-              <Paragraph
+              <Point
                 textFormat="left"
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
                 Proactive approach to securing sensitive data and business
                 information.
-              </Paragraph>
+              </Point>
             </li>
             <li>
-              <Paragraph
+              <Point
                 textFormat="left"
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
                 Trusted by a growing number of businesses to navigate the
                 evolving threat landscape.
-              </Paragraph>
+              </Point>
             </li>
           </ul>
         </Container>
