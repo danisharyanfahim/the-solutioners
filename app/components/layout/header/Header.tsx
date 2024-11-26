@@ -15,8 +15,8 @@ const Header = ({
   logo = "static/images/logos/page-logos/home-logo.png",
   icon = "static/icons/navbar-icons/main-icon.png",
 }: {
-  logo: string;
-  icon: string;
+  logo?: string;
+  icon?: string;
 }) => {
   const pos1 = useScrollPosition(scrollMultipliers[0]);
   const pos2 = useScrollPosition(scrollMultipliers[1]);
