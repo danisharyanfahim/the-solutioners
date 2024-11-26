@@ -22,21 +22,22 @@ const NavButton = ({
       <Card
         minHeight="4rem"
         width="9rem"
-        padding="0rem 1rem"
+        padding="0rem 0rem 0rem 0.5rem"
         graphic={{
           src: icon,
           type: "icon",
           size: text ? 100 : 50,
           fraction: text ? 30 : 100,
           colorInfo: color,
+          justify: "right",
         }}
         format="type1"
         style={{
           minWidth: text ? "6rem" : "7rem",
-          paddingRight: text ? "2rem" : "1rem",
-          paddingLeft: "1rem",
           background: background,
           height: "calc(100% + 3px)",
+          paddingRight: "1rem",
+          paddingLeft: "1rem",
         }}
       >
         {text && (

@@ -22,6 +22,8 @@ const Card = ({
     minImageSize,
     colorInfo,
     animation,
+    justify,
+    align,
   },
   children,
   format,
@@ -41,6 +43,8 @@ const Card = ({
     minImageSize?: string;
     colorInfo?: string;
     animation?: string;
+    justify?: string;
+    align?: string;
   };
   children: React.ReactNode;
   format: string;
@@ -73,10 +77,10 @@ const Card = ({
           height: "auto", // The height is based on the content
           width: "100%",
           // backgroundColor: "blue",
-          justifyContent: "center",
-          alignItems: "center",
           borderRadius: "8px", // Optional: Border radius for rounded image corners
           animation: animation ?? "none",
+          alignItems: align ?? "center",
+          justifyContent: justify ?? "center",
         }}
       >
         {src && type === "image" ? (
