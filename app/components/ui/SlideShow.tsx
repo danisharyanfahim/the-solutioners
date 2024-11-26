@@ -1,6 +1,6 @@
 "use client";
 import { centerItems } from "@/app/global/styleFunctions";
-import { DIRECTIONS, testImages } from "@/app/global/variables";
+import { DIRECTIONS } from "@/app/global/variables";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Slide from "./cards/Slide";
 import Paragraph from "../content/text/Paragraph";
@@ -38,7 +38,7 @@ and finally there is sliding, which reveals the next slide from left to
 
 /* This just needs animations now, also the button styles can be changed along with the indicator style and position, another variation of the indicator is to have boxes on the bottom showing the slides along the bottom of the slideshow*/
 const SlideShow: React.FC<SlideShowProps> = ({
-  slideInfo = testImages,
+  slideInfo,
   infinite = true,
   autoPlay = false,
   delay,
