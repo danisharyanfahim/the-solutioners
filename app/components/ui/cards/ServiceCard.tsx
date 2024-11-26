@@ -47,6 +47,7 @@ const ServiceCard = ({ src, title, paragraph, btnUrl }: CardProps) => {
         borderBottom: "1px solid white",
         // backgroundColor: "rgba(255 255 255 / 0.1)",
         backdropFilter: "blur(20px) brightness(130%)",
+        WebkitBackdropFilter: "blur(20px) brightness(130%)",
         boxShadow: "inset 0px 0px 10px 2px rgba(0 0 0 / 0.15)",
         paddingTop: "2rem",
         paddingBottom: "1rem",
@@ -98,7 +99,7 @@ const ServiceCard = ({ src, title, paragraph, btnUrl }: CardProps) => {
             background:
               "linear-gradient(90deg, rgba(25, 0, 55, 0.1), rgba(55, 0, 5, 0.1))",
           }}
-          fontSize="clamp(1.1rem, 1vw + 0.625rem, 1.7rem)"
+          fontSize="clamp(1rem, 1vw + 0.625rem, 1.7rem)"
         />
       </article>
     </Card>

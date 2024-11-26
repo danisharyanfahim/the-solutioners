@@ -4,6 +4,7 @@ import { DIRECTIONS } from "@/app/global/variables";
 import { useMediaQueries } from "@/app/hooks/useMediaQueries";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import CarouselCard from "./cards/CarouselCard";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 /*
 -This currently displays the main item at the end, other variants will include having the main one on the left or the right followed by the others,also will need to add animations as well. Also this needs to responsive to the screen size as well, and making a vertical variation as well
@@ -284,13 +285,13 @@ const Carousel: React.FC<CarouselProps> = ({
             WebkitBackdropFilter: "blur(10px)",
             boxShadow: "0 2px 6px 0px rgba(0 0 0 / 0.2)",
             color: "rgba(240, 240, 250, 0.9)",
-            display: "table-cell",
-            verticalAlign: "middle",
-            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
           onClick={() => toggleScroll(DIRECTIONS.LEFT)}
         >
-          {"❮"}
+          <FaAngleLeft />
         </button>
         {device !== null && (
           <ul
@@ -350,13 +351,13 @@ const Carousel: React.FC<CarouselProps> = ({
             WebkitBackdropFilter: "blur(10px)",
             boxShadow: "0 2px 6px 0px rgba(0 0 0 / 0.2)",
             color: "rgba(240, 240, 250, 0.9)",
-            display: "table-cell",
-            verticalAlign: "middle",
-            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
           onClick={() => toggleScroll(DIRECTIONS.RIGHT)}
         >
-          ❯
+          <FaAngleRight />
         </button>
       </div>
       {/* {autoPlay && (

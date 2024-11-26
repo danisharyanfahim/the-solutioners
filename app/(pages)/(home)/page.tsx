@@ -405,7 +405,7 @@ const Home = () => {
             <Ticker
               height={"clamp(10rem, 50vh, 18rem)"}
               itemInfo={partnerLogos}
-              speed={3}
+              speed={2}
               direction={DIRECTIONS.FORWARD}
               infinite={true}
               autoPlay={true}

@@ -39,6 +39,7 @@ const AccordionRow = ({
           alignItems: "center",
           borderBottom: "1px solid white",
           backdropFilter: "blur(10px)",
+          WebkitBackdropFilter: "blur(10px)",
           backgroundColor: "rgba(0, 0, 0, 0.3)",
         }}
       >
