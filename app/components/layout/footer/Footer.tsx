@@ -213,7 +213,7 @@ const Footer = () => {
                 width="100%"
                 padding="0rem 1rem"
                 graphic={{
-                  src: "static/icons/footer-icons/phone-Icon.png",
+                  src: "static/icons/footer-icons/phone-icon.png",
                   type: "icon",
                   size: 70,
                   fraction: 20,
