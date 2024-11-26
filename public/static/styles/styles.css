@@ -1,0 +1,44 @@
+@import url(./partials/_fonts.css);
+@import url(./partials/_variables.css);
+@import url(./partials/_animations.css);
+@import url(./partials/_media-queries.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(196, 195, 221);
+  background: linear-gradient(135deg, rgb(24, 1, 77), rgb(7, 1, 36));
+  margin: 0rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+figure {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0em;
+  margin-inline-end: 0em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl {
+  margin: 0;
+}
