@@ -47,6 +47,9 @@ const Header = ({
             maskImage: `url(${iconURL})`,
             maskSize: "100%",
             maskRepeat: "no-repeat",
+            WebkitMaskImage: `url(${iconURL})`,
+            WebkitMaskSize: "100%",
+            WebkitMaskRepeat: "no-repeat",
             position: "absolute",
             animation: `float ${
               -scrollMultipliers[i] + 1
@@ -64,6 +67,7 @@ const Header = ({
             left: 20 + ((1 + i) % 8) * 300 - (8 / (i + 1)) * 60 + "px",
             // zIndex: Math.floor((1 + scrollMultipliers[i]) * -10),
             backdropFilter: "blur(4px)",
+            WebkitBackdropFilter: "blur(4px)",
           }}
         ></div>
       );
@@ -83,6 +87,9 @@ const Header = ({
           maskImage: `url(${iconURL})`,
           maskSize: "100%",
           maskRepeat: "no-repeat",
+          WebkitMaskImage: `url(${iconURL})`,
+          WebkitMaskSize: "100%",
+          WebkitMaskRepeat: "no-repeat",
           opacity: "100%",
           animation: "drop 1.65s",
         }}

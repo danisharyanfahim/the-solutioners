@@ -181,7 +181,7 @@ const NavMenu: React.FC<{ btnInfo: btnInfo }> = ({ btnInfo }) => {
           >
             <Icon
               src="static/icons/navbar-icons/menu-icon.png"
-              colorInfo="rgba(35, 0, 80)"
+              colorInfo="linear-gradient(to top left, rgba(50, 0, 90), rgba(35, 0, 80))"
             />
           </button>
         </div>
