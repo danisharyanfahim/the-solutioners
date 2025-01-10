@@ -11,8 +11,8 @@ const IncidentResponse = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/services-icons/incident-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/services-icons/incident-icon.png"
       />
       <Page title="incident-response">
         <Container

@@ -9,7 +9,7 @@ const scrollMultipliers = [
 ];
 
 const backgroundImageURL =
-  "static/images/background-images/header-background.jpg";
+  "/static/images/background-images/header-background.jpg";
 
 const Header = ({ logo, icon }: { logo?: string; icon?: string }) => {
   const pos1 = useScrollPosition(scrollMultipliers[0]);

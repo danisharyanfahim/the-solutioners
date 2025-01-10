@@ -10,11 +10,11 @@ import Ticker from "@/app/components/ui/Ticker";
 import { DIRECTIONS } from "@/app/global/variables";
 import React from "react";
 
-const partnerLogo1 = "static/images/logos/partner-logos/datto-logo.png";
-const partnerLogo2 = "static/images/logos/partner-logos/ingram-micro-logo.png";
-const partnerLogo3 = "static/images/logos/partner-logos/kaseya-logo.png";
-const partnerLogo4 = "static/images/logos/partner-logos/microsoft-logo.png";
-const partnerLogo5 = "static/images/logos/partner-logos/starwind-logo.png";
+const partnerLogo1 = "/static/images/logos/partner-logos/datto-logo.png";
+const partnerLogo2 = "/static/images/logos/partner-logos/ingram-micro-logo.png";
+const partnerLogo3 = "/static/images/logos/partner-logos/kaseya-logo.png";
+const partnerLogo4 = "/static/images/logos/partner-logos/microsoft-logo.png";
+const partnerLogo5 = "/static/images/logos/partner-logos/starwind-logo.png";
 
 const partnerLogos = [
   partnerLogo1,
@@ -28,8 +28,8 @@ const Home = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/navbar-icons/main-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/navbar-icons/main-icon.png"
       />
       <Page title="home-page">
         <VideoContainer src="/static/videos/Home.mp4">
@@ -92,7 +92,7 @@ const Home = () => {
           style={{
             borderRadius: "25px 0px 0px 25px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(-135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.7)), url(static/images/background-images/home-background-1.jpg)`,
+            backgroundImage: `linear-gradient(-135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.7)), url(/static/images/background-images/home-background-1.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "right",
@@ -124,7 +124,7 @@ const Home = () => {
           style={{
             borderRadius: "0px 25px 25px 0px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/home-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/home-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left",
@@ -190,7 +190,7 @@ const Home = () => {
           style={{
             borderRadius: "25px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/home-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/home-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left",
@@ -283,7 +283,7 @@ const Home = () => {
           style={{
             borderRadius: "25px 0px 0px 25px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(-135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/home-background-4.jpg)`,
+            backgroundImage: `linear-gradient(-135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/home-background-4.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left",
@@ -362,7 +362,7 @@ const Home = () => {
           }}
           style={{
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/home-background-5.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/home-background-5.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "top",

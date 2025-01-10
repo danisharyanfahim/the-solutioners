@@ -12,8 +12,8 @@ const ApiSecurity = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/services-icons/api-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/services-icons/api-icon.png"
       />
       <Page title="api-security">
         <Container

@@ -12,8 +12,8 @@ const Contact = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/navbar-icons/contact-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/navbar-icons/contact-icon.png"
       />
       <Page title="Contact">
         <VideoContainer src="/static/videos/Contact.mp4">
@@ -68,7 +68,7 @@ const Contact = () => {
           style={{
             borderRadius: "25px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/contact-background-1.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/contact-background-1.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "top",
@@ -95,7 +95,7 @@ const Contact = () => {
                 padding="0rem 1rem"
                 margin="1rem 0rem"
                 graphic={{
-                  src: "static/icons/footer-icons/address-icon.png",
+                  src: "/static/icons/footer-icons/address-icon.png",
                   type: "icon",
                   size: 75,
                   fraction: 30,
@@ -119,7 +119,7 @@ const Contact = () => {
                 padding="0rem 1rem"
                 margin="1rem 0rem"
                 graphic={{
-                  src: "static/icons/footer-icons/phone-icon.png",
+                  src: "/static/icons/footer-icons/phone-icon.png",
                   type: "icon",
                   size: 75,
                   fraction: 30,
@@ -143,7 +143,7 @@ const Contact = () => {
                 padding="0rem 1rem"
                 margin="1rem 0rem"
                 graphic={{
-                  src: "static/icons/footer-icons/email-icon.png",
+                  src: "/static/icons/footer-icons/email-icon.png",
                   type: "icon",
                   size: 75,
                   fraction: 30,
@@ -184,7 +184,7 @@ const Contact = () => {
           }}
           style={{
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/contact-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/contact-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",

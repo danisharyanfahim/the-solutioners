@@ -12,8 +12,8 @@ const About = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/navbar-icons/about-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/navbar-icons/about-icon.png"
       />
       <Page title="Testimonials">
         <Container
@@ -27,7 +27,7 @@ const About = () => {
           }}
           style={{
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/contact-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/contact-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",
@@ -69,7 +69,7 @@ const About = () => {
           }}
           style={{
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/contact-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/contact-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",
@@ -309,7 +309,7 @@ const About = () => {
           }}
           style={{
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/contact-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/contact-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",
@@ -535,7 +535,7 @@ const About = () => {
           }}
           style={{
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/contact-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/contact-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",

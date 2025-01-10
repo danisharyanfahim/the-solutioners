@@ -12,8 +12,8 @@ const PenetrationTesting = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/services-icons/penetration-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/services-icons/penetration-icon.png"
       />
       <Page title="penetration-testing">
         <Container

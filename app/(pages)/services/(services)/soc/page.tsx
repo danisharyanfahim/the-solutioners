@@ -12,8 +12,8 @@ const Saas = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/api-logo.png"
-        icon="static/icons/services-icons/saas-icon.png"
+        logo="/static/images/logos/page-logos/api-logo.png"
+        icon="/static/icons/services-icons/saas-icon.png"
       />
       <Page title="soc">
         <Container

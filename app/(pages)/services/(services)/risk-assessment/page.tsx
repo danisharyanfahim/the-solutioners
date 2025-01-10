@@ -12,8 +12,8 @@ const RiskAssessment = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/services-icons/risk-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/services-icons/risk-icon.png"
       />
       <Page title="risk-assessment">
         <Container

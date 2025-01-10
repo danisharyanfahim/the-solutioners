@@ -15,8 +15,8 @@ const Services = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/navbar-icons/services-icon.png"
+        logo="/static/images/logos/page-logos/home-logo.png"
+        icon="/static/icons/navbar-icons/services-icon.png"
       />
       <Page title="Services">
         <VideoContainer src="/static/videos/Services.mp4">
@@ -81,7 +81,7 @@ const Services = () => {
           style={{
             borderRadius: "25px 0px 0px 25px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(-135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.7)), url(static/images/background-images/services-background-1.jpg)`,
+            backgroundImage: `linear-gradient(-135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.7)), url(/static/images/background-images/services-background-1.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "right",
@@ -125,7 +125,7 @@ const Services = () => {
           style={{
             borderRadius: "25px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/services-background-2.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/services-background-2.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "top",
@@ -163,28 +163,28 @@ const Services = () => {
                   title: `Up-to-Date Expertise`,
                   paragraph: `We stay ahead of evolving threats and new
                 technologies to offer the most relevant and effective solutions.`,
-                  imageURL: "static/images/slide-images/slide-1.png",
+                  imageURL: "/static/images/slide-images/slide-1.png",
                 },
                 {
                   title: `Customized Solutions`,
                   paragraph: `Our services are tailored to meet the
                 specific needs of your organization, ensuring optimal protection
                 and performance.`,
-                  imageURL: "static/images/slide-images/slide-2.png",
+                  imageURL: "/static/images/slide-images/slide-2.png",
                 },
                 {
                   title: ` Innovative Technology`,
                   paragraph: `We utilize advanced tools and AI to
                 enhance our threat detection and response capabilities,
                 providing superior security.`,
-                  imageURL: "static/images/slide-images/slide-3.png",
+                  imageURL: "/static/images/slide-images/slide-3.png",
                 },
                 {
                   title: `Cost-Effective Security`,
                   paragraph: `We provide a cost-effective way to access expert
                 security resources. Clients can leverage enterprise-grade cybersecurity
                 capabilities without the high costs of hiring and training an in-house team`,
-                  imageURL: "static/images/slide-images/slide-4.png",
+                  imageURL: "/static/images/slide-images/slide-4.png",
                 },
               ]}
             />
@@ -214,7 +214,7 @@ const Services = () => {
           style={{
             borderRadius: "0px 25px 25px 0px",
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(static/images/background-images/services-background-3.jpg)`,
+            backgroundImage: `linear-gradient(135deg, rgba(240, 240, 255), rgba(225, 220, 250) 50%, rgba(225, 220, 250, 0.8)), url(/static/images/background-images/services-background-3.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left",
@@ -254,7 +254,7 @@ const Services = () => {
           }}
           style={{
             backgroundColor: "white",
-            backgroundImage: `linear-gradient(105deg, rgba(35, 20, 85), rgba(30, 30, 90) 50%, rgba(35, 30, 90, 0.8)), url(static/images/background-images/services-background-4.jpg)`,
+            backgroundImage: `linear-gradient(105deg, rgba(35, 20, 85), rgba(30, 30, 90) 50%, rgba(35, 30, 90, 0.8)), url(/static/images/background-images/services-background-4.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "top",
