@@ -8,12 +8,14 @@ const Paragraph = ({
   padding,
   textWrap,
   color,
+  style,
 }: {
   children: string | React.ReactNode;
   textFormat: textFormat;
   padding?: string;
   textWrap?: "wrap" | "nowrap" | "balance" | "pretty" | "stable";
   color?: string;
+  style?: {};
 }) => {
   return (
     <p
@@ -25,6 +27,7 @@ const Paragraph = ({
         padding: padding ?? 0,
         textWrap: textWrap ?? "wrap",
         color: color ?? "inherit",
+        ...style,
       }}
     >
       {children}

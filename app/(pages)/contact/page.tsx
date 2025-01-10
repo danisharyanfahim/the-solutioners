@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/contact-logo.png"
+        logo="static/images/logos/page-logos/home-logo.png"
         icon="static/icons/navbar-icons/contact-icon.png"
       />
       <Page title="Contact">

@@ -7,7 +7,6 @@ import Header from "@/app/components/layout/header/Header";
 import Page from "@/app/components/layout/page/Page";
 import Carousel from "@/app/components/ui/Carousel";
 import Ticker from "@/app/components/ui/Ticker";
-import { getRandomIntBetween } from "@/app/global/functions";
 import { DIRECTIONS } from "@/app/global/variables";
 import React from "react";
 
@@ -41,41 +40,43 @@ const Home = () => {
             color="#436"
             style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
           >
-            Welcome to TheSolutioners
+            Welcome
           </Title>
           <Paragraph
             textFormat="justify"
             color="rgba(85, 80, 140)"
             padding="1rem 0rem"
           >
-            Welcome to our website, we are The Solutioners, a Canadian IT
-            company that specializes in cybersecurity services. In today's
-            digital age, protecting sensitive information is more crucial than
-            ever.
+            Welcome to TheSolutioners, your trusted partner in safeguarding your
+            digital world with cost-effective cybersecurity solutions. In
+            today’s rapidly evolving technological landscape, cyber threats are
+            more sophisticated and pervasive than ever before. Every business,
+            regardless of its size or industry, is vulnerable to cyberattacks
+            that can jeopardize sensitive data, disrupt operations, and damage
+            your reputation.
           </Paragraph>
           <Paragraph
             textFormat="justify"
             color="rgba(85, 80, 140)"
             padding="1rem 0rem"
           >
-            Our company is dedicated to providing you with top-notch security
-            solutions to safeguard your data. Our team of experts utilizes the
-            latest technologies to identify and mitigate potential threats. We
-            offer a range of services, including network security, cloud
-            security, and a browser-based antivirus software to help protect you
-            from potential online threats.
+            At TheSolutioners, we are committed to ensuring your business
+            remains secure and resilient. We understand the critical importance
+            of robust cybersecurity, and we provide affordable, tailored
+            solutions to protect your assets without breaking the bank.
           </Paragraph>
           <Paragraph
             textFormat="justify"
             color="rgba(85, 80, 140)"
             padding="1rem 0rem"
           >
-            Our goal is to ensure your business remains secure and resilient.
-            Partnering with us means you can focus on your core business
-            activities without worrying about cyber threats. We provide
-            continuous monitoring and support to keep your systems safe. At The
-            Solutioners, you can trust us to be your reliable cybersecurity
-            partners.
+            We offer comprehensive cybersecurity services and monitor your
+            digital assets 24/7, ensuring you are always one step ahead of
+            potential threats. Our expert team delivers maximum value by
+            defending against attacks, ensuring compliance, mitigating risks,
+            and strengthening your organization’s overall security posture. Let
+            us help you protect your future while optimizing your cybersecurity
+            budget and maintaining peace of mind.
           </Paragraph>
         </VideoContainer>
         <Container

@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/services-logo.png"
+        logo="static/images/logos/page-logos/home-logo.png"
         icon="static/icons/navbar-icons/services-icon.png"
       />
       <Page title="Services">

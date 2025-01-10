@@ -25,24 +25,6 @@ export const servicesInfo: serviceInfo[] = [
     icon: "static/icons/services-icons/bcdr-icon.png",
   },
   {
-    title: "BDR",
-    url: "/services/bdr",
-    card: {
-      title: "BDR and Browser-Based Antivirus Software",
-      paragraph: `Advanced Browser Detection and Response (BDR) and antivirus solutions that protect against web-based threats. Our tools provide real-time scanning, phishing protection, and malicious site blocking to enhance your browsing security.`,
-    },
-    icon: "static/icons/services-icons/bdr-icon.png",
-  },
-  {
-    title: "Cloud Security",
-    url: "/services/cloud-security",
-    card: {
-      title: "Cloud Security Services",
-      paragraph: `Robust security solutions designed for cloud environments, ensuring the confidentiality, integrity, and availability of your data. We provide cloud access security, data protection, and compliance solutions to secure your cloud infrastructure.`,
-    },
-    icon: "static/icons/services-icons/cloud-icon.png",
-  },
-  {
     title: "Incident Response",
     url: "/services/incident-response",
     card: {
@@ -79,23 +61,15 @@ export const servicesInfo: serviceInfo[] = [
     icon: "static/icons/services-icons/risk-icon.png",
   },
   {
-    title: "SAAS",
-    url: "/services/saas",
+    title: "SOC",
+    url: "/services/soc",
     card: {
-      title: "SAAS Services",
-      paragraph: `Protect your business with our Managed Security Service Provider (MSSP) solutions. We offer 24/7 monitoring, advanced threat detection, and rapid response to keep your data safe from evolving cyber threats. We tailor our approach to safeguard your digital assets against a wide array of cyber threats.`,
+      title: "SOC Services",
+      paragraph: `Our locally based Security Operations Center (SOC) offers cutting-edge solutions tailored to protect your business from evolving cyber threats.`,
     },
     icon: "static/icons/services-icons/saas-icon.png",
   },
-  {
-    title: "System Integration",
-    url: "/services/system-integration",
-    card: {
-      title: "System Integration Services",
-      paragraph: `Expert integration of diverse systems and technologies to streamline operations and enhance efficiency. We ensure that all components work seamlessly together, optimizing performance and security.`,
-    },
-    icon: "static/icons/services-icons/system-icon.png",
-  },
+
 ];
 
 export const pageInfo = [
@@ -106,8 +80,8 @@ export const pageInfo = [
     iconURL: "static/icons/navbar-icons/home-icon.png",
   },
   {
-    title: "About",
-    url: "/about",
+    title: "Testimonials",
+    url: "/testimonials",
     isDropDown: false,
     iconURL: "static/icons/navbar-icons/about-icon.png",
   },

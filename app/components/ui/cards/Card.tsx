@@ -1,30 +1,12 @@
 import React from "react";
 
-/* 
-- Add a card
-- Make the image responsive
-- Image size is determined based on text dimensions
-- Use Icon component and Image components once this is done
-*/
-
 const Card = ({
   margin,
   minHeight,
   maxHeight,
   width,
   padding,
-  graphic: {
-    type,
-    src,
-    fraction,
-    size,
-    maxImageSize,
-    minImageSize,
-    colorInfo,
-    animation,
-    justify,
-    align,
-  },
+  graphic,
   children,
   format,
   style,
@@ -34,9 +16,9 @@ const Card = ({
   maxHeight?: string;
   width: string;
   padding?: string;
-  graphic: {
+  graphic?: {
     type: string;
-    src: string | undefined;
+    src?: string;
     fraction: number;
     size: number;
     maxImageSize?: string;
@@ -50,6 +32,7 @@ const Card = ({
   format: string;
   style?: {};
 }) => {
+  const obj = graphic;
   return (
     <div
       className="card"
@@ -68,70 +51,72 @@ const Card = ({
         // background: "navy", // Background color for the content section
       }}
     >
-      <figure
-        className="graphic-container"
-        style={{
-          display: "flex",
-          position: "relative",
-          flex: `0 0 ${format === "type1" ? fraction : "100%"}%`, // Image takes up `fraction` of the width
-          height: "auto", // The height is based on the content
-          width: "100%",
-          // backgroundColor: "blue",
-          borderRadius: "8px", // Optional: Border radius for rounded image corners
-          animation: animation ?? "none",
-          alignItems: align ?? "center",
-          justifyContent: justify ?? "center",
-        }}
-      >
-        {src && type === "image" ? (
-          <img
-            src={src}
-            alt="Card graphic"
-            style={{
-              width: "100%", // Make the image responsive
-              height: "100%", // Maintain the aspect ratio
-              objectFit: "contain", // Ensure it covers the area
-              // borderRadius: "8px", // Optional: Border radius for rounded image corners
-              position: "absolute",
-            }}
-          />
-        ) : (
-          <div
-            className="icon"
-            style={{
-              //Will add max and minWidth and height afterwards
-              position: "relative",
-              background: colorInfo ?? "white",
-              // width: size + "%",
-              // maxWidth: maxImageSize,
-              // minWidth: minImageSize,
-              width: `clamp(${minImageSize ?? "0rem"}, ${size}%, ${
-                maxImageSize ?? "100rem"
-              })`,
-              aspectRatio: "1 / 1",
-              // backgroundImage: `url(${src})`,
-              // backgroundSize: "contain",
-              // backgroundPosition: "center",
-              // backgroundRepeat: "no-repeat",
-              maskImage: `url(${src})`,
-              maskSize: "contain",
-              maskPosition: "center",
-              maskRepeat: "no-repeat",
-              WebkitMaskImage: `url(${src})`,
-              WebkitMaskSize: "contain",
-              WebkitMaskPosition: "center",
-              WebkitMaskRepeat: "no-repeat",
-            }}
-          ></div>
-        )}
-      </figure>
+      {graphic && (
+        <figure
+          className="graphic-container"
+          style={{
+            display: "flex",
+            position: "relative",
+            flex: `0 0 ${format === "type1" ? graphic.fraction : "100%"}%`, // Image takes up `fraction` of the width
+            height: "auto", // The height is based on the content
+            width: "100%",
+            // backgroundColor: "blue",
+            borderRadius: "8px", // Optional: Border radius for rounded image corners
+            animation: graphic.animation ?? "none",
+            alignItems: graphic.align ?? "center",
+            justifyContent: graphic.justify ?? "center",
+          }}
+        >
+          {graphic.src && graphic.type === "image" ? (
+            <img
+              src={src}
+              alt="Card graphic"
+              style={{
+                width: "100%", // Make the image responsive
+                height: "100%", // Maintain the aspect ratio
+                objectFit: "contain", // Ensure it covers the area
+                // borderRadius: "8px", // Optional: Border radius for rounded image corners
+                position: "absolute",
+              }}
+            />
+          ) : (
+            <div
+              className="icon"
+              style={{
+                //Will add max and minWidth and height afterwards
+                position: "relative",
+                background: graphic.colorInfo ?? "white",
+                // width: size + "%",
+                // maxWidth: maxImageSize,
+                // minWidth: minImageSize,
+                width: `clamp(${graphic.minImageSize ?? "0rem"}, ${
+                  graphic.size
+                }%, ${graphic.maxImageSize ?? "100rem"})`,
+                aspectRatio: "1 / 1",
+                // backgroundImage: `url(${src})`,
+                // backgroundSize: "contain",
+                // backgroundPosition: "center",
+                // backgroundRepeat: "no-repeat",
+                maskImage: `url(${graphic.src})`,
+                maskSize: "contain",
+                maskPosition: "center",
+                maskRepeat: "no-repeat",
+                WebkitMaskImage: `url(${graphic.src})`,
+                WebkitMaskSize: "contain",
+                WebkitMaskPosition: "center",
+                WebkitMaskRepeat: "no-repeat",
+              }}
+            ></div>
+          )}
+        </figure>
+      )}
       <section
         className="content"
         style={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center", // Align text content in the center
-          width: format === "type1" ? `${100 - fraction}%` : "100%", // Content area takes up the remaining width
+          width: format === "type1" ? `${100 - graphic.fraction}%` : "100%", // Content area takes up the remaining width
           padding: padding ?? "0rem",
           position: "relative",
           // color: "white", // Assuming the text should be white on navy background

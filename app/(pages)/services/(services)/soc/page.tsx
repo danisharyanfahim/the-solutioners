@@ -8,14 +8,14 @@ import Page from "@/app/components/layout/page/Page";
 import Card from "@/app/components/ui/cards/Card";
 import React from "react";
 
-const OtSecurity = () => {
+const Saas = () => {
   return (
     <>
       <Header
-        logo="static/images/logos/page-logos/home-logo.png"
-        icon="static/icons/services-icons/ot-icon.png"
+        logo="static/images/logos/page-logos/api-logo.png"
+        icon="static/icons/services-icons/saas-icon.png"
       />
-      <Page title="ot-security">
+      <Page title="soc">
         <Container
           type="section"
           padding="max(4vw, 1.5rem)"
@@ -45,19 +45,26 @@ const OtSecurity = () => {
             size={2}
             style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
           >
-            Operational Technology (OT) Security Tailored to Industrial Needs
+            Security operations Center (SOC)
+          </Title>
+          <Title
+            textFormat="center"
+            padding="0.5rem 0rem"
+            size={4}
+            style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
+          >
+            Comprehensive SOC Services for Modern Threat Management
           </Title>
           <Paragraph
             textFormat="justify"
             padding="0.5rem 0rem 1rem"
             color="rgba(85, 80, 140)"
           >
-            In today’s interconnected world, the security of operational
-            technology is paramount. Our OT security solutions are designed to
-            protect critical infrastructure, minimize downtime, and ensure
-            operational resilience. Backed by a North American-based team of
-            experts, we’ve safeguarded industries ranging from automotive
-            manufacturing to commodity production and beyond.
+            Our locally based Security Operations Center (SOC) offers
+            cutting-edge solutions tailored to protect your business from
+            evolving cyber threats. With a focus on proactive monitoring and
+            rapid incident response, our North American team ensures your
+            digital environment remains secure around the clock.
           </Paragraph>
         </Container>
         <Container
@@ -90,7 +97,7 @@ const OtSecurity = () => {
             size={2}
             style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
           >
-            Key Features of Our OT Security Services
+            Key Features of Our SOC Solutions
           </Title>
           <ul
             style={{
@@ -104,9 +111,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Real-Time Monitoring for OT Networks: Detect and respond to
-                threats across industrial control systems (ICS) and SCADA
-                environments.
+                Automated Threat Detection: Harness the power of advanced
+                automation to identify and respond to threats in real time.
               </Point>
             </li>
             <li>
@@ -115,9 +121,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Industrial Cyber Threat Protection: Advanced tools to protect
-                against ransomware, insider threats, and supply chain
-                vulnerabilities.
+                Unified Management Dashboard: Monitor and manage your entire
+                security landscape from a single intuitive platform.
               </Point>
             </li>
             <li>
@@ -126,9 +131,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Tailored Security Frameworks: Customized solutions aligned with
-                the unique operational and regulatory needs of industrial
-                environments.
+                Cloud and On-Premises Security: Seamlessly protect cloud
+                environments like Microsoft 365 and hybrid infrastructures.
               </Point>
             </li>
             <li>
@@ -137,8 +141,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Resilient Incident Response: Rapid identification, containment,
-                and remediation of threats to minimize downtime.
+                Comprehensive Compliance Support: Stay ahead of regulatory
+                requirements with tools designed to simplify compliance.
               </Point>
             </li>
             <li>
@@ -147,8 +151,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Integration Across IT and OT: Ensure seamless security coverage
-                across both traditional IT systems and specialized OT networks.
+                24/7 Expert Monitoring: Our North American-based analysts
+                deliver continuous surveillance and actionable insights.
               </Point>
             </li>
           </ul>
@@ -183,7 +187,7 @@ const OtSecurity = () => {
             size={2}
             style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
           >
-            Why Choose Our OT Security Team?
+            Benefits of Partnering With Us
           </Title>
           <ul
             style={{
@@ -197,9 +201,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Proven Industry Expertise: Our team has successfully delivered
-                solutions for industries like automotive manufacturing,
-                commodities processing, and critical infrastructure.
+                Local Expertise, Global Reach: Work with a trusted SOC team
+                rooted in North America.
               </Point>
             </li>
             <li>
@@ -208,8 +211,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Local and Reliable Support: With a North American-based team, we
-                provide responsive, expert assistance whenever you need it.
+                Improved Threat Response Time: Minimize downtime with automated
+                and human-led response capabilities.
               </Point>
             </li>
             <li>
@@ -218,8 +221,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                Minimized Operational Disruptions: Focus on running your
-                operations while we manage and secure your critical systems.
+                Cost-Effective Security Solutions: Protect your organization
+                without the need for in-house SOC resources.
               </Point>
             </li>
             <li>
@@ -228,8 +231,8 @@ const OtSecurity = () => {
                 padding="0.5rem 0rem"
                 color="rgba(85, 80, 140)"
               >
-                End-to-End Protection: Comprehensive security services from
-                assessment to implementation and ongoing management.
+                Tailored Services: Solutions customized to meet the specific
+                needs of your industry and business size.
               </Point>
             </li>
           </ul>
@@ -263,7 +266,7 @@ const OtSecurity = () => {
             size={4}
             style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
           >
-            Securing the Future of Your Operations
+            Partner With Experts Who Understand Your Needs
           </Title>
           <Title
             textFormat="center"
@@ -271,9 +274,9 @@ const OtSecurity = () => {
             size={6}
             style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
           >
-            Whether you’re safeguarding a car manufacturing plant or a
-            commodities processing facility, our team delivers solutions that
-            protect your infrastructure from today’s most pressing threats.
+            In today's digital world, protecting your assets is more critical
+            than ever. Trust our locally based SOC team to safeguard your
+            business with tools and strategies that keep you ahead of the curve.
           </Title>
           <Title
             textFormat="center"
@@ -281,8 +284,8 @@ const OtSecurity = () => {
             size={6}
             style={{ textShadow: "0px 0px 10px rgba(20, 20, 50, 0.2)" }}
           >
-            Get in touch to discuss how we can secure your operations and
-            empower your business to thrive in a connected world.
+            Contact us today to learn how we can enhance your cybersecurity
+            posture and give you peace of mind.
           </Title>
         </Container>
       </Page>
@@ -290,4 +293,4 @@ const OtSecurity = () => {
   );
 };
 
-export default OtSecurity;
+export default Saas;

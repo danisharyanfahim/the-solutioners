@@ -31,7 +31,7 @@ const selectStyle = (isMobile: boolean, isActive: boolean) => {
   } else {
     return {
       padding: "1rem",
-      width: "9rem",
+      width: "8.9rem",
       background: isActive
         ? "linear-gradient(to right, rgba(220, 0, 0), rgba(240, 140, 0))"
         : "transparent",
@@ -120,7 +120,7 @@ const NavMenu: React.FC<{ btnInfo: btnInfo }> = ({ btnInfo }) => {
                 const isActive2 = pathname === item.url;
                 return (
                   <li
-                    className={`${item.title}-container}`}
+                    className={`${item.title} container`}
                     key={itemIndex}
                     style={{
                       display: "flex",

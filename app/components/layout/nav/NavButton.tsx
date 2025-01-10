@@ -19,42 +19,81 @@ const NavButton = ({
 }) => {
   return (
     <Link href={url}>
-      <Card
-        minHeight="4rem"
-        width="9rem"
-        padding="0rem 0rem 0rem 0.5rem"
-        graphic={{
-          src: icon,
-          type: "icon",
-          size: text ? 100 : 50,
-          fraction: text ? 30 : 100,
-          colorInfo: color,
-          justify: "right",
-        }}
-        format="type1"
+      <div
+        className="card"
         style={{
-          minWidth: text ? "6rem" : "7rem",
+          display: "inline-flex",
+          overflow: "hidden", // Hide any overflowed content
+          position: "relative",
+          minHeight: "4rem",
+          flexDirection: "row", // Ensure card's children (image and content) are placed side-by-side
+          alignItems: "center",
           background: background,
           height: "calc(100% + 3px)",
-          paddingRight: "1rem",
           paddingLeft: "1rem",
+          paddingRight: "clamp(1rem, -4rem + 6.667vw, 2rem)",
+          gap: "0.5rem",
         }}
       >
-        {text && (
-          <Container
-            height="100%"
-            format={{
-              xAlignment: "flex-start",
-              yAlignment: "center",
-              direction: "row",
+        <figure
+          className="graphic-container"
+          style={{
+            display: "flex",
+            position: "relative",
+            flex: `0 0 ${text ? 30 : 100}%`, // Image takes up `fraction` of the width
+            height: "50px", // The height is based on the content
+            width: "100%",
+            borderRadius: "8px", // Optional: Border radius for rounded image corners
+            animation: "none",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            className="icon"
+            style={{
+              position: "relative",
+              background: color,
+              width: `clamp("0rem", ${text ? 100 : 50}%, "100rem")`,
+              aspectRatio: "1 / 1",
+              maskImage: `url(${icon})`,
+              maskSize: "contain",
+              maskPosition: "center",
+              maskRepeat: "no-repeat",
+              WebkitMaskImage: `url(${icon})`,
+              WebkitMaskSize: "contain",
+              WebkitMaskPosition: "center",
+              WebkitMaskRepeat: "no-repeat",
+              height: "30px",
             }}
-          >
-            <Paragraph textFormat="left" color={color}>
-              {text}
-            </Paragraph>
-          </Container>
-        )}
-      </Card>
+          ></div>
+        </figure>
+        <section
+          className="content"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center", // Align text content in the center
+            width: `${100 - (text ? 30 : 100)}%`, // Content area takes up the remaining width
+            position: "relative",
+          }}
+        >
+          {text && (
+            <Container
+              height="100%"
+              format={{
+                xAlignment: "center",
+                yAlignment: "center",
+                direction: "row",
+              }}
+            >
+              <Paragraph textFormat="left" color={color}>
+                {text}
+              </Paragraph>
+            </Container>
+          )}
+        </section>
+      </div>
     </Link>
   );
 };

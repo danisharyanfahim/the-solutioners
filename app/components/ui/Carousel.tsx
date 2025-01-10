@@ -74,6 +74,7 @@ const Carousel: React.FC<CarouselProps> = ({
           title={item.title}
           paragraph={item.paragraph}
           iconURL={item.url}
+          points={item.points}
         />
       </li>
     ));
