@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import VideoPlayer from "../ui/VideoPlayer";
 import { useMediaQueries } from "@/app/hooks/useMediaQueries";
 import Container from "./Container";
+import Video from "next-video";
+import { Asset } from "next-video/dist/assets.js";
 
 const VideoContainer = ({
   src,
   children,
 }: {
-  src: string;
+  src: Asset;
   children?: React.ReactNode;
 }) => {
   const deviceSize = useMediaQueries();
@@ -35,14 +37,15 @@ const VideoContainer = ({
           "0px 1px 5px 2px rgba(0 0 0 /0.15), inset 0px 0px 0px 3px rgba(145 145 155 / 0.4)",
       }}
     >
-      <VideoPlayer
+      {/* <VideoPlayer
         autoPlay={false}
         vignette={true}
         fadeLimit={1}
         src={src}
         height={device !== null && device < 4 ? "66dvh" : "100dvh"}
         width={device !== null && device < 4 ? "100%" : "66%"}
-      />
+      /> */}
+      <Video src={src} />
       <Container
         type="section"
         padding="max(2vw, 1.5rem)"

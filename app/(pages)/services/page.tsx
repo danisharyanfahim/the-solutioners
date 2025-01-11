@@ -10,6 +10,7 @@ import Container from "@/app/components/containers/Container";
 import ServiceCard from "@/app/components/ui/cards/ServiceCard";
 import SlideShow from "@/app/components/ui/SlideShow";
 import VideoContainer from "@/app/components/containers/VideoContainer";
+import video from "@/videos/services.mp4";
 
 const Services = () => {
   return (
@@ -19,7 +20,7 @@ const Services = () => {
         icon="/static/icons/navbar-icons/services-icon.png"
       />
       <Page title="Services">
-        <VideoContainer src="/static/videos/Services.mp4">
+        <VideoContainer src={video}>
           <Title
             textFormat="center"
             padding="0.5rem 0rem"

@@ -1,6 +1,7 @@
 "use client";
 import { useScrollPosition } from "@/app/hooks/useScrollPosition";
 import React, { useEffect, useRef, useState } from "react";
+import { FaPlay } from "react-icons/fa";
 
 /* 
 // -Responsive
@@ -111,7 +112,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
           }}
           onClick={() => handlePlaying(!isPlaying)}
         >
-          {isPlaying ? "" : "\u23F5"}
+          {isPlaying ? "" : <FaPlay />}
         </button>
       </div>
       {vignette && (

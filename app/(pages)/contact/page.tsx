@@ -7,6 +7,7 @@ import Title from "@/app/components/content/text/Title";
 import Paragraph from "@/app/components/content/text/Paragraph";
 import Container from "@/app/components/containers/Container";
 import VideoContainer from "@/app/components/containers/VideoContainer";
+import video from "@/videos/contact.mp4";
 
 const Contact = () => {
   return (
@@ -16,7 +17,7 @@ const Contact = () => {
         icon="/static/icons/navbar-icons/contact-icon.png"
       />
       <Page title="Contact">
-        <VideoContainer src="/static/videos/Contact.mp4">
+        <VideoContainer src={video}>
           <Title
             textFormat="center"
             padding="0.5rem 0rem"

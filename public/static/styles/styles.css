@@ -42,3 +42,9 @@ ol,
 dl {
   margin: 0;
 }
+
+.carousel::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+  appearance: none;
+}

@@ -9,6 +9,7 @@ import Carousel from "@/app/components/ui/Carousel";
 import Ticker from "@/app/components/ui/Ticker";
 import { DIRECTIONS } from "@/app/global/variables";
 import React from "react";
+import video from "@/videos/home.mp4";
 
 const partnerLogo1 = "/static/images/logos/partner-logos/datto-logo.png";
 const partnerLogo2 = "/static/images/logos/partner-logos/ingram-micro-logo.png";
@@ -32,7 +33,7 @@ const Home = () => {
         icon="/static/icons/navbar-icons/main-icon.png"
       />
       <Page title="home-page">
-        <VideoContainer src="/static/videos/Home.mp4">
+        <VideoContainer src={video}>
           <Title
             textFormat="center"
             padding="0.5rem 0rem"

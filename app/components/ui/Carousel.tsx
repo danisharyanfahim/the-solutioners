@@ -327,6 +327,7 @@ const Carousel: React.FC<CarouselProps> = ({
               msOverflowStyle: "none",
               touchAction: "none",
               padding: "1rem 0rem",
+
               // cursor: dragging.current ? 'grab' : 'default'
             }} /* Add it for chrome as well */
           >
