@@ -3,6 +3,7 @@ import React from "react";
 import Card from "../../ui/cards/Card";
 import Paragraph from "../../content/text/Paragraph";
 import Container from "../../containers/Container";
+import { formatStringToId } from "@/app/global/functions";
 
 const NavButton = ({
   icon,
@@ -87,7 +88,11 @@ const NavButton = ({
                 direction: "row",
               }}
             >
-              <Paragraph textFormat="left" color={color}>
+              <Paragraph
+                textFormat="left"
+                color={color}
+                id={formatStringToId(text)}
+              >
                 {text}
               </Paragraph>
             </Container>

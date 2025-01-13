@@ -80,8 +80,8 @@ export const pageInfo = [
     iconURL: "static/icons/navbar-icons/home-icon.png",
   },
   {
-    title: "Testimonials",
-    url: "/testimonials",
+    title: "Success Stories",
+    url: "/success-stories",
     isDropDown: false,
     iconURL: "static/icons/navbar-icons/about-icon.png",
   },

@@ -21,7 +21,14 @@ export const returnElement: {
       return index;
     }
   }
+  };
+
+  export const formatStringToId = (input: string): string => {
+  return input
+    .replace(/\s+/g, "-") // Replace all white spaces with hyphens
+    .toLowerCase(); // Convert all letters to lowercase
 };
+
 
 export const getRandomIntBetween = (
   min: number,

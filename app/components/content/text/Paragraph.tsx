@@ -9,6 +9,7 @@ const Paragraph = ({
   textWrap,
   color,
   style,
+  id,
 }: {
   children: string | React.ReactNode;
   textFormat: textFormat;
@@ -16,6 +17,7 @@ const Paragraph = ({
   textWrap?: "wrap" | "nowrap" | "balance" | "pretty" | "stable";
   color?: string;
   style?: {};
+  id?: string;
 }) => {
   return (
     <p
@@ -29,6 +31,7 @@ const Paragraph = ({
         color: color ?? "inherit",
         ...style,
       }}
+      id={id}
     >
       {children}
     </p>
