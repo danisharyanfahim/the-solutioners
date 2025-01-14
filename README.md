@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Solutioners Website
+A professional, user-friendly website created for The Solutioners, a Canadian cyber-security and IT solutions company. The website serves as a digital hub for the company’s wide range of IT security services, including SOC services, risk assessment, penetration testing, and more.
 
-## Getting Started
+## Overview
+I served as the sole developer for this project, managing the full development process from start to finish. The website was designed to provide a seamless, visually appealing experience across devices, reflecting the company’s brand identity and showcasing their services.
 
-First, run the development server:
+### Key Features:
+Responsive Design: Optimized for mobile, tablet, and desktop devices.
+Brand Identity: Custom design and theme reflecting the company’s visual identity.
+AI-Generated Videos: AI-generated videos using Synthesia.io to enhance content presentation.
+Custom Graphics & Icons: Designed bespoke icons and graphics that align with the company’s branding.
+Content Creation: Wrote detailed service descriptions and website content to communicate the company's offerings effectively.
+Smooth Deployment: Deployed the website on Ionos and optimized its performance using Vercel.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- **Frontend:**
+    - HTML
+    - CSS
+    - JavaScript (JS)
+    - TypeScript (TS)
+    - React
+    - Next.js
+    - SASS
+    - Git/GitHub
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Media & Design:**
+    - Adobe Photoshop
+    - Adobe Illustrator
+    - Synthesia.io (AI-generated video content)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Deployment & Hosting:**
+    - Ionos
+    - Plesk
+    - Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributions
+This project was developed as a solo effort, with the following tasks completed:
 
-## Learn More
+  - Full-stack website development, including design, coding, and content creation.
+  - Deployment and performance optimization on Ionos and Vercel.
+  - Creation of media assets, including images, videos, and custom graphics.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
